@@ -1,0 +1,452 @@
+@charset "UTF-8";
+/*
+0 - 600px: phone
+600 - 900px: tablet potrait
+900 - 1200px: tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px = :  big desktop
+
+1em = 16px
+
+order: base > typography > general layout + grid > page layout > components
+
+*/
+@font-face {
+  font-family: "gilroy medium";
+  src: url(../../assets/fonts/gilroy-medium.ttf); }
+
+@font-face {
+  font-family: "gilroy extrabold";
+  src: url(../../assets/fonts/gilroy-extrabold.otf); }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media screen and (max-width: 900px) {
+    html {
+      font-size: 50%; } }
+  @media screen and (max-width: 750px) {
+    html {
+      font-size: 46.875%; } }
+  @media screen and (max-width: 375px) {
+    html {
+      font-size: 23.43%; } }
+  @media screen and (max-width: 450px) {
+    html {
+      font-size: 28.125%; } }
+  @media screen and (max-width: 600px) {
+    html {
+      font-size: 37.5%; } }
+  @media screen and (min-width: 1800px) {
+    html {
+      font-size: 75%; } }
+  @media screen and (max-width: 1200px) {
+    html {
+      font-size: 56.25%; } }
+
+body {
+  font-family: "gilroy medium", sans-serif;
+  line-height: 1.8;
+  min-height: 100vh; }
+
+main {
+  overflow: hidden; }
+
+.intro__title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #e0e0e0; }
+
+.intro__paragraph {
+  font-size: 2rem;
+  font-weight: 400;
+  color: gold; }
+
+.cta__title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: gold;
+  text-align: center; }
+
+.card {
+  font-family: "Courier New", Courier, monospace; }
+  .card__title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #f0f0f0;
+    margin: 2.5rem 0;
+    text-transform: capitalize; }
+  .card__sub-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #f0f0f0;
+    margin: 2.5rem 0;
+    text-transform: capitalize; }
+  .card__text {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #e2e2e2; }
+
+.form-title {
+  font-family: gilroy medium;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #e2e2e2; }
+
+.foot-text {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #f0f0f0;
+  text-align: center; }
+
+.service-card__title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #f0f0f0;
+  margin: 0 0 1rem 0;
+  text-transform: capitalize;
+  background-color: rgba(19, 18, 18, 0.863); }
+
+.service-card__sub-title {
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #f0f0f0;
+  margin: 2.5rem 0;
+  text-transform: capitalize; }
+
+.u-margin {
+  margin: 8rem; }
+
+.center {
+  text-align: center; }
+
+.margin-top {
+  margin-top: 8rem; }
+
+.btn, .btn:link, .btn:visited {
+  cursor: pointer;
+  display: block;
+  font-size: 1.5rem;
+  height: 4rem;
+  width: 23rem;
+  background-color: #2224b1;
+  color: #ffffff;
+  margin-top: 3.5rem;
+  padding: 0.5rem 7rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: 1px solid transparent;
+  border-radius: 0.2rem;
+  transition: 1s all; }
+  .btn:hover, .btn:link:hover, .btn:visited:hover {
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.5);
+    transform: scale(1.045) translateY(1px); }
+
+.btn-doc, .btn-doc:link, .btn-doc:visited {
+  cursor: pointer;
+  font-size: 1.5rem;
+  height: 5rem;
+  width: 17rem;
+  margin: -9rem 26.5rem;
+  padding: 1rem 5rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: 1px solid transparent;
+  border-radius: 0.2rem;
+  transition: 5ms all; }
+
+.btn-doc__white {
+  color: #5c5c5c;
+  background-color: #ffffff; }
+
+.btn-doc__doc {
+  color: #f0f0f0;
+  background-color: #2224b1; }
+
+.btn-vid, .btn-vid:link, .btn-vid:visited {
+  cursor: pointer;
+  font-size: 1.5rem;
+  height: 5rem;
+  margin: 5rem auto;
+  width: 20rem;
+  padding: 1rem 5rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: 1px solid transparent;
+  border-radius: 0.2rem;
+  transition: 5ms all; }
+
+.btn-join, .btn-join:link, .btn-join:visited {
+  cursor: pointer;
+  display: block;
+  font-size: 1.5rem;
+  height: 4.5rem;
+  margin-left: 13rem;
+  width: 18.5rem;
+  background-color: #2224b1;
+  color: #ffffff;
+  margin-top: 3.5rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: 1px solid transparent;
+  border-radius: 0.2rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+  transition: 5ms all;
+  font-family: gilroy medium;
+  padding: 1rem 4rem; }
+  .btn-join:hover, .btn-join:link:hover, .btn-join:visited:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    transform: scale(1.045) translateY(1px); }
+  @media screen and (max-width: 600px) {
+    .btn-join, .btn-join:link, .btn-join:visited {
+      margin-top: 1.5rem; } }
+
+.btn-join-form {
+  margin-left: 6rem;
+  width: 29.5rem; }
+
+.card {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  background: linear-gradient(to right, #070707 0%, #161616 50%, #0821f7ed 50%, #2d58e6c5, #beb209ba 100%), url("../../assets/images/barber.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left; }
+  .card__text-content {
+    padding: 2rem 2rem; }
+  .card__form-content {
+    flex: 0 0 50%;
+    padding: 0 10rem; }
+  .card__form-label {
+    font-size: 1.8rem;
+    text-align: center;
+    display: block;
+    font-family: gilroy medium;
+    color: #e2e2e2; }
+  .card__form-input {
+    font-size: 1.5rem;
+    height: 5rem;
+    width: 23rem;
+    padding: 1rem 1rem;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    outline: none;
+    color: #00020a;
+    margin: 3.5rem 10rem; }
+
+.home__video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-position: center;
+  object-fit: cover;
+  overflow: hidden;
+  z-index: -1; }
+
+.intro {
+  position: relative;
+  padding: 9rem 24rem; }
+  .intro__input {
+    height: 5rem;
+    width: 23rem;
+    padding: 1rem 1rem;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    outline: none;
+    color: #00020a;
+    margin: 4rem 0;
+    font-size: 1.5rem; }
+
+.form {
+  font-family: gilroy medium;
+  font-size: inherit;
+  background-color: #ffffff;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+  height: 72rem;
+  width: 65%;
+  padding: 6rem 20rem;
+  margin-top: 3.5rem;
+  position: relative;
+  left: 25rem;
+  top: 3rem; }
+  @media (max-width: 70em) {
+    .form {
+      width: 33%;
+      height: 63rem;
+      padding: 3rem 0.2rem; } }
+  @media (max-width: 56.25em) {
+    .form {
+      width: 35%; } }
+  @media (max-width: 37.5em) {
+    .form {
+      margin-right: 0;
+      margin-left: 0.5rem;
+      margin-top: 12rem;
+      height: 66rem;
+      width: 96%; } }
+  .form__form-label {
+    font-size: 1.8rem;
+    display: block;
+    font-family: gilroy medium;
+    color: #5c5c5c; }
+  .form__input {
+    margin-bottom: 3rem;
+    height: 4rem;
+    width: 100%;
+    font-size: 1.5rem;
+    font-family: inherit;
+    padding: 0 1rem;
+    text-transform: capitalize;
+    outline: none;
+    border-radius: 0.3rem;
+    display: block;
+    transition: all 0.2s; }
+    .form__input:focus {
+      border-bottom: 1px solid green;
+      outline: none;
+      background-color: #ffffff; }
+    .form__input::-webkit-input-placeholder {
+      color: #e2e2e2; }
+
+input[type="radio"]:checked ~ .check {
+  border: 5px solid #0d1dff; }
+
+input[type="radio"]:checked ~ .check::before {
+  background: #0d4eff; }
+
+input[type="radio"]:checked ~ label {
+  color: #0d45ff; }
+
+.service {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+  flex-wrap: wrap; }
+  @media (max-width: 37.5em) {
+    .service {
+      flex-direction: column; } }
+  .service__card {
+    margin: 5rem 2.7rem;
+    border-radius: 0.6rem;
+    width: 45rem;
+    height: 24rem;
+    background: linear-gradient(to right, #010002, #060024);
+    box-shadow: 0px 0rem 0.5rem rgba(0, 0, 0, 0.2); }
+    @media (max-width: 37.5em) {
+      .service__card:not(:last-child) {
+        margin-bottom: 3rem; } }
+  .service__list {
+    font-size: 1.6rem;
+    list-style: none; }
+    .service__list::before {
+      content: "✓";
+      margin: 0 1rem; }
+
+.header {
+  display: grid;
+  align-content: center;
+  justify-content: end;
+  position: relative;
+  z-index: 5; }
+
+.logo-box {
+  position: absolute;
+  flex: 0 0 50%;
+  margin: 2rem 3.3rem; }
+  @media screen and (max-width: 600px) {
+    .logo-box {
+      margin: 2rem 1rem; } }
+
+.logo {
+  height: 2.8rem;
+  width: 10rem; }
+
+.nav-link,
+.nav-link:link .nav-link:visited {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: gold;
+  text-decoration: none;
+  transition: all 5ms ease-in-out;
+  position: absolute;
+  right: 3rem;
+  top: 2rem; }
+  .nav-link:hover,
+  .nav-link:link .nav-link:visited:hover {
+    color: #f0f0f0; }
+
+.home-section {
+  background: linear-gradient(to bottom, #000000ec, #000000);
+  position: relative;
+  padding: 12rem 0; }
+
+.barber-section {
+  background: linear-gradient(to bottom, #000000e0, #000000), url("../../assets/images/barber3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70rem;
+  padding: 5rem 0;
+  position: relative; }
+  @media (max-width: 37.5em) {
+    .barber-section {
+      height: 95rem; } }
+  .barber-section::before {
+    content: "";
+    background: url("../../assets/images/wave.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 53rem;
+    width: 256rem;
+    position: absolute;
+    top: 38%;
+    left: 0;
+    bottom: 0;
+    right: 0; }
+    @media (max-width: 37.5em) {
+      .barber-section::before {
+        height: 72rem;
+        width: 200rem; } }
+
+.cta {
+  background: #292828;
+  padding: 3rem 5rem; }
+
+.section-form {
+  padding: 3rem 0;
+  background: linear-gradient(147deg, #000000d7, #040127de), url("../../assets/images/barber2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100rem; }
+  @media (max-width: 37.5em) {
+    .section-form {
+      padding: 3rem 3rem;
+      background-size: cover; } }
+
+.step-section {
+  background-color: var(--color-white); }
+  @media (max-width: 37.5em) {
+    .step-section {
+      margin-top: 30rem;
+      padding: 0.5rem 6.5rem; } }

@@ -1,0 +1,62 @@
+.home-section {
+    background: linear-gradient(to bottom, #000000ec, #000000);
+    position: relative;
+    padding: 12rem 0;
+}
+
+.barber-section {
+    background: linear-gradient(to bottom, #000000e0, #000000), url("../../assets/images/barber3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70rem;
+    padding: 5rem 0;
+    position: relative;
+    @include respond(phone) {
+        height: 95rem;
+    }
+    &::before {
+        content: "";
+        background: url("../../assets/images/wave.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 53rem;
+        width: 256rem;
+        position: absolute;
+        top: 38%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        @include respond(phone) {
+            height: 72rem;
+            width: 200rem;
+        }
+    }
+}
+
+.cta {
+    background: $color-dark;
+    padding: 3rem 5rem;
+}
+
+.section-form {
+    padding: 3rem 0;
+    background: linear-gradient(147deg, #000000d7, #040127de), url("../../assets/images/barber2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100rem;
+    @include respond(phone) {
+        padding: 3rem 3rem;
+        background-size: cover;
+    }
+}
+
+.step-section {
+    background-color: var(--color-white);
+    @include respond(phone) {
+        margin-top: 30rem;
+        padding: 0.5rem 6.5rem;
+    }
+}

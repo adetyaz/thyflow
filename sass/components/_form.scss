@@ -1,0 +1,74 @@
+.form {
+    font-family: gilroy medium;
+    font-size: inherit;
+    background-color: $color-white;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.3rem 0.5rem rgba(#000000, 0.3);
+    height: 72rem;
+    width: 65%;
+    padding: 6rem 20rem;
+    margin-top: 3.5rem;
+    position: relative;
+    left: 25rem;
+    top: 3rem;
+    @include respond(tab-land-card) {
+        width: 33%;
+        height: 63rem;
+        padding: 3rem 0.2rem;
+    }
+    @include respond(tab-port) {
+        width: 35%;
+    }
+    @include respond(phone) {
+        margin-right: 0;
+        margin-left: 0.5rem;
+        margin-top: 12rem;
+        height: 66rem;
+        width: 96%;
+    }
+    &__form-label {
+        font-size: 1.8rem;
+        display: block;
+        font-family: gilroy medium;
+        color: $color-dark-grey;
+    }
+    &__input {
+        margin-bottom: 3rem;
+        height: 4rem;
+        width: 100%;
+        font-size: 1.5rem;
+        font-family: inherit;
+        padding: 0 1rem;
+        text-transform: capitalize;
+        outline: none;
+        border-radius: 0.3rem;
+        display: block;
+        transition: all 0.2s;
+        &:focus {
+            border-bottom: 1px solid green;
+            outline: none;
+            background-color: $color-white;
+        }
+        &::-webkit-input-placeholder {
+            color: $color-grey;
+        }
+    }
+}
+
+input[type="radio"]:checked~.check::before {
+    background: #0d4eff;
+}
+
+input[type="radio"]:checked~label {
+    color: #0d45ff;
+}
+
+input[type="radio"] {
+    margin: 1.5rem;
+    width: 10rem;
+}
+
+.radio-label {
+    margin: 1rem 1rem;
+    font-size: 1.6rem;
+}

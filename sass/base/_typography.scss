@@ -1,0 +1,76 @@
+.intro {
+    &__title {
+        font-size: 3rem;
+        font-weight: 600;
+        color: rgb(224, 224, 224);
+    }
+    &__paragraph {
+        font-size: 2rem;
+        font-weight: 400;
+        color: $color-gold;
+    }
+}
+
+.cta {
+    &__title {
+        font-size: 3rem;
+        font-weight: 600;
+        color: $color-gold;
+        text-align: center;
+    }
+}
+
+.card {
+    font-family: "Courier New", Courier, monospace;
+    &__title {
+        font-size: 3rem;
+        font-weight: 600;
+        color: $color-light;
+        margin: 2.5rem 0;
+        text-transform: capitalize;
+    }
+    &__sub-title {
+        font-size: 2rem;
+        font-weight: 600;
+        color: $color-light;
+        margin: 2.5rem 0;
+        text-transform: capitalize;
+    }
+    &__text {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: $color-grey;
+    }
+}
+
+.form-title {
+    font-family: gilroy medium;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: $color-grey;
+}
+
+.foot-text {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $color-light;
+    text-align: center;
+}
+
+.service-card {
+    &__title {
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: $color-light;
+        margin: 0 0 1rem 0;
+        text-transform: capitalize;
+        background-color: rgba(19, 18, 18, 0.863);
+    }
+    &__sub-title {
+        font-size: 1.9rem;
+        font-weight: 600;
+        color: $color-light;
+        margin: 2.5rem 0;
+        text-transform: capitalize;
+    }
+}

@@ -1,0 +1,37 @@
+.card {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    background: linear-gradient( to right, #070707 0%, #161616 50%, #0821f7ed 50%, #2d58e6c5, #beb209ba 100%), url("../../assets/images/barber.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    &__text-content {
+        padding: 2rem 2rem;
+    }
+    &__form-content {
+        flex: 0 0 50%;
+        padding: 0 10rem;
+    }
+    &__form-label {
+        font-size: 1.8rem;
+        text-align: center;
+        display: block;
+        font-family: gilroy medium;
+        color: $color-grey;
+    }
+    &__form-input {
+        font-size: 1.5rem;
+        height: 5rem;
+        width: 23rem;
+        padding: 1rem 1rem;
+        border-radius: 3px;
+        border: 1px solid transparent;
+        outline: none;
+        color: $color-blue;
+        margin: 3.5rem 10rem;
+    }
+}

@@ -1,0 +1,36 @@
+.header {
+    display: grid;
+    align-content: center;
+    justify-content: end;
+    position: relative;
+    z-index: 5;
+}
+
+.logo-box {
+    position: absolute;
+    flex: 0 0 50%;
+    margin: 2rem 3.3rem;
+    @media screen and (max-width: 600px) {
+        margin: 2rem 1rem;
+    }
+}
+
+.logo {
+    height: 2.8rem;
+    width: 10rem;
+}
+
+.nav-link,
+.nav-link:link .nav-link:visited {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $color-gold;
+    text-decoration: none;
+    transition: all 5ms ease-in-out;
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    &:hover {
+        color: $color-light;
+    }
+}
