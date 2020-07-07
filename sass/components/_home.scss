@@ -15,6 +15,9 @@
 .intro {
     position: relative;
     padding: 9rem 24rem;
+    @include respond(phone) {
+        padding: 9rem 4rem;
+    }
     &__input {
         height: 5rem;
         width: 23rem;

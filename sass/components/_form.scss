@@ -12,19 +12,23 @@
     left: 25rem;
     top: 3rem;
     @include respond(tab-land-card) {
-        width: 33%;
-        height: 63rem;
+        width: 59%;
+        height: 75rem;
         padding: 3rem 0.2rem;
     }
     @include respond(tab-port) {
-        width: 35%;
+        left: 21rem;
+    }
+    @include respond(tab-pad) {
+        left: 19rem;
     }
     @include respond(phone) {
         margin-right: 0;
         margin-left: 0.5rem;
         margin-top: 12rem;
         height: 66rem;
-        width: 96%;
+        width: 100%;
+        left: 0;
     }
     &__form-label {
         font-size: 1.8rem;
@@ -55,17 +59,13 @@
     }
 }
 
-input[type="radio"]:checked~.check::before {
-    background: #0d4eff;
-}
-
 input[type="radio"]:checked~label {
     color: #0d45ff;
 }
 
 input[type="radio"] {
     margin: 1.5rem;
-    width: 10rem;
+    width: 2rem;
 }
 
 .radio-label {

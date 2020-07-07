@@ -1,5 +1,8 @@
 .u-margin {
     margin: 8rem;
+    @include respond(phone) {
+        margin: 0;
+    }
 }
 
 .center {
@@ -8,4 +11,10 @@
 
 .margin-top {
     margin-top: 8rem;
+}
+
+.mobile {
+    @include respond(tab-land-card) {
+        padding: 0 7rem;
+    }
 }

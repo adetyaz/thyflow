@@ -33,4 +33,22 @@
     &:hover {
         color: $color-light;
     }
+    @include respond(phone) {
+        display: none;
+    }
+}
+
+.toggle {
+    display: none;
+    @include respond(phone) {
+        display: block;
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: $color-gold;
+        text-decoration: none;
+        transition: all 5ms ease-in-out;
+        position: absolute;
+        right: 3rem;
+        top: 2rem;
+    }
 }

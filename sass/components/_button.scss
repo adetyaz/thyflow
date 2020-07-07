@@ -39,9 +39,8 @@
         border-radius: 0.2rem;
         transition: 5ms all;
     }
-    &__white {
-        color: $color-dark-grey;
-        background-color: $color-white;
+    @include respond(phone) {
+        margin: 0 0;
     }
     &__doc {
         color: $color-light;
@@ -101,4 +100,13 @@
 .btn-join-form {
     margin-left: 6rem;
     width: 29.5rem;
+    @include respond(tab-land-card) {
+        margin-left: 16rem;
+    }
+    @include respond(tab-port) {
+        margin-left: 11rem;
+    }
+    @include respond(phone) {
+        margin-left: 3rem;
+    }
 }

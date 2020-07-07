@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" type="image/svg" href="assets/images/logo.png" />
     <title>Thyflow</title>
 </head>
@@ -19,13 +20,13 @@
         <section class="barber-section">
             <div class="home">
                 <div class="intro">
-                    <h4 class="intro__title">
+                    <h4 class="intro__title" data-aos="fade-up">
                         Become a barber and join our amazing platform today.
                     </h4>
-                    <p class="intro__paragraph">
+                    <p class="intro__paragraph" data-aos="fade-up" data-aos-delay="500">
                         ThyFlow is an alternative way for people to get a haircut at home. ThyFlow, offers customers a barbershop experience at home or wherever they are.
                     </p>
-                    <a href="https://www.youtube.com/watch?v=HRpI1cH5bbI" class="btn btn-vid">Watch Video</a
+                    <a href="https://www.youtube.com/watch?v=HRpI1cH5bbI" class="btn btn-vid" data-aos="fade-up" data-aos-delay="850">Watch Video</a
             >
           </div>
         </div>
@@ -51,7 +52,11 @@
               </li>
             </ul>
           </div>
-          <div class="service__card" data-aos="fade-up-right">
+          <div
+            class="service__card"
+            data-aos="fade-up-left"
+            data-aos-delay="500"
+          >
             <h3 class="service-card__title">
               What you will need
             </h3>
@@ -159,4 +164,10 @@
       </section>
     </main>
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+    });
+  </script>
 </html>

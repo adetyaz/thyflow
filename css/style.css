@@ -125,12 +125,19 @@ main {
 
 .u-margin {
   margin: 8rem; }
+  @media (max-width: 37.5em) {
+    .u-margin {
+      margin: 0; } }
 
 .center {
   text-align: center; }
 
 .margin-top {
   margin-top: 8rem; }
+
+@media (max-width: 70em) {
+  .mobile {
+    padding: 0 7rem; } }
 
 .btn, .btn:link, .btn:visited {
   cursor: pointer;
@@ -164,9 +171,9 @@ main {
   border-radius: 0.2rem;
   transition: 5ms all; }
 
-.btn-doc__white {
-  color: #5c5c5c;
-  background-color: #ffffff; }
+@media (max-width: 37.5em) {
+  .btn-doc {
+    margin: 0 0; } }
 
 .btn-doc__doc {
   color: #f0f0f0;
@@ -213,6 +220,15 @@ main {
 .btn-join-form {
   margin-left: 6rem;
   width: 29.5rem; }
+  @media (max-width: 70em) {
+    .btn-join-form {
+      margin-left: 16rem; } }
+  @media (max-width: 56.25em) {
+    .btn-join-form {
+      margin-left: 11rem; } }
+  @media (max-width: 37.5em) {
+    .btn-join-form {
+      margin-left: 3rem; } }
 
 .card {
   padding: 4rem 0;
@@ -225,11 +241,25 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left; }
+  @media (max-width: 37.5em) {
+    .card {
+      flex-direction: column;
+      background: linear-gradient(to bottom, #070707 0%, #161616 50%, #0821f7ed 50%, #2d58e6c5, #beb209ba 100%), url("../../assets/images/barber.jpg"); } }
   .card__text-content {
     padding: 2rem 2rem; }
   .card__form-content {
     flex: 0 0 50%;
     padding: 0 10rem; }
+    @media (max-width: 70em) {
+      .card__form-content {
+        margin-top: -50rem; } }
+    @media (max-width: 56.25em) {
+      .card__form-content {
+        flex: 0 0 0;
+        padding: 0 0; } }
+    @media (max-width: 37.5em) {
+      .card__form-content {
+        margin-top: 0; } }
   .card__form-label {
     font-size: 1.8rem;
     text-align: center;
@@ -261,6 +291,9 @@ main {
 .intro {
   position: relative;
   padding: 9rem 24rem; }
+  @media (max-width: 37.5em) {
+    .intro {
+      padding: 9rem 4rem; } }
   .intro__input {
     height: 5rem;
     width: 23rem;
@@ -287,19 +320,23 @@ main {
   top: 3rem; }
   @media (max-width: 70em) {
     .form {
-      width: 33%;
-      height: 63rem;
+      width: 59%;
+      height: 75rem;
       padding: 3rem 0.2rem; } }
   @media (max-width: 56.25em) {
     .form {
-      width: 35%; } }
+      left: 21rem; } }
+  @media (max-width: 770px) {
+    .form {
+      left: 19rem; } }
   @media (max-width: 37.5em) {
     .form {
       margin-right: 0;
       margin-left: 0.5rem;
       margin-top: 12rem;
       height: 66rem;
-      width: 96%; } }
+      width: 100%;
+      left: 0; } }
   .form__form-label {
     font-size: 1.8rem;
     display: block;
@@ -324,14 +361,16 @@ main {
     .form__input::-webkit-input-placeholder {
       color: #e2e2e2; }
 
-input[type="radio"]:checked ~ .check {
-  border: 5px solid #0d1dff; }
-
-input[type="radio"]:checked ~ .check::before {
-  background: #0d4eff; }
-
 input[type="radio"]:checked ~ label {
   color: #0d45ff; }
+
+input[type="radio"] {
+  margin: 1.5rem;
+  width: 2rem; }
+
+.radio-label {
+  margin: 1rem 1rem;
+  font-size: 1.6rem; }
 
 .service {
   padding: 5rem 0;
@@ -352,8 +391,11 @@ input[type="radio"]:checked ~ label {
     background: linear-gradient(to right, #010002, #060024);
     box-shadow: 0px 0rem 0.5rem rgba(0, 0, 0, 0.2); }
     @media (max-width: 37.5em) {
-      .service__card:not(:last-child) {
-        margin-bottom: 3rem; } }
+      .service__card {
+        margin: 8rem 0;
+        width: 38rem; }
+        .service__card:not(:last-child) {
+          margin-bottom: 3rem; } }
   .service__list {
     font-size: 1.6rem;
     list-style: none; }
@@ -393,6 +435,24 @@ input[type="radio"]:checked ~ label {
   .nav-link:hover,
   .nav-link:link .nav-link:visited:hover {
     color: #f0f0f0; }
+  @media (max-width: 37.5em) {
+    .nav-link,
+    .nav-link:link .nav-link:visited {
+      display: none; } }
+
+.toggle {
+  display: none; }
+  @media (max-width: 37.5em) {
+    .toggle {
+      display: block;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: gold;
+      text-decoration: none;
+      transition: all 5ms ease-in-out;
+      position: absolute;
+      right: 3rem;
+      top: 2rem; } }
 
 .home-section {
   background: linear-gradient(to bottom, #000000ec, #000000);

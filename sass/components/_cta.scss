@@ -9,12 +9,26 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
+    @include respond(phone) {
+        flex-direction: column;
+        background: linear-gradient( to bottom, #070707 0%, #161616 50%, #0821f7ed 50%, #2d58e6c5, #beb209ba 100%), url("../../assets/images/barber.jpg");
+    }
     &__text-content {
         padding: 2rem 2rem;
     }
     &__form-content {
         flex: 0 0 50%;
         padding: 0 10rem;
+        @include respond(tab-land-card) {
+            margin-top: -50rem;
+        }
+        @include respond(tab-port) {
+            flex: 0 0 0;
+            padding: 0 0;
+        }
+        @include respond(phone) {
+            margin-top: 0;
+        }
     }
     &__form-label {
         font-size: 1.8rem;
