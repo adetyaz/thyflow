@@ -74,7 +74,7 @@ main {
   text-align: center; }
 
 .card {
-  font-family: "Courier New", Courier, monospace; }
+  font-family: "roboto"; }
   .card__title {
     font-size: 3rem;
     font-weight: 600;
@@ -136,8 +136,7 @@ main {
     padding: 0 7rem; } }
 
 .position {
-  position: relative;
-  top: 5rem; }
+  top: 10rem; }
 
 .btn, .btn:link, .btn:visited {
   cursor: pointer;
@@ -289,7 +288,7 @@ main {
 
 .intro {
   position: relative;
-  padding: 9rem 29rem; }
+  padding: 15rem 29rem; }
   @media (max-width: 37.5em) {
     .intro {
       padding: 9rem 4rem; } }
