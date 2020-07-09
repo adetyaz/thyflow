@@ -1,11 +1,11 @@
 .home-section {
-    background: linear-gradient(to bottom, #000000ec, #000000);
+    background: linear-gradient(to top, #ddd6f3, #0e24ee88);
     position: relative;
-    padding: 12rem 0;
+    height: 75rem;
 }
 
 .barber-section {
-    background: linear-gradient(to bottom, #000000e0, #000000), url("../../assets/images/barber3.jpg");
+    background: linear-gradient(to bottom, #235effd7, #f1b612c0), url("../../assets/images/barber3.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -36,7 +36,10 @@
 }
 
 .cta {
-    background: $color-dark;
+    background: linear-gradient( to bottom, #ddd6f3, rgba(245, 243, 243, 0.788) 70%, #0355d1a9), url("../../assets/images/patterned-background.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 3rem 5rem;
 }
 

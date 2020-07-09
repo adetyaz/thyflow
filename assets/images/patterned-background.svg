@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%">
+  <defs>
+    <pattern id="pattern" width="75" height="75" viewBox="0 0 40,40" patternUnits="userSpaceOnUse" patternTransform="rotate(114)">
+      <rect id="pattern-background" width="400%" height="400%" fill="rgba(255, 255, 255,1)"/>
+      <circle fill="rgba(64, 88, 135,1)" cx="-13" cy="15" r="1"/>
+      <circle fill="rgba(64, 88, 135,1)" cx="-3" cy="25" r="1"/>
+      <circle fill="rgba(64, 88, 135,1)" cx="7" cy="15" r="1"/>
+      <circle fill="rgba(64, 88, 135,1)" cx="27" cy="15" r="1"/>
+      <circle fill="rgba(64, 88, 135,1)" cx="17" cy="25" r="1"/>
+      <circle fill="rgba(64, 88, 135,1)" cx="37" cy="25" r="1"/>
+      <circle fill="rgba(239, 203, 72,1)" cx="15" cy="15" r="1"/>
+      <circle fill="rgba(239, 203, 72,1)" cx="35" cy="15" r="1"/>
+      <circle fill="rgba(239, 203, 72,1)" cx="5" cy="25" r="1"/>
+      <circle fill="rgba(239, 203, 72,1)" cx="25" cy="25" r="1"/>
+    </pattern>
+  </defs>
+  <rect fill="url(#pattern)" height="100%" width="100%"/>
+</svg>

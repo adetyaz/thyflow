@@ -16,8 +16,12 @@
     "author": "lasisi adetayo",
     "license": "ISC",
     "dependencies": {
+        "compress": "^0.99.0",
+        "concat": "^1.0.3",
         "live-server": "^1.2.1",
         "node-sass": "^4.14.1",
-        "npm-run-all": "^4.1.5"
+        "npm-run-all": "^4.1.5",
+        "postcss": "^7.0.32",
+        "prefix": "^1.0.0"
     }
 }
